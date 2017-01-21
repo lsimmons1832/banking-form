@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>LNS National Bank</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="validation.css">
 </head>
 <body>
+<div>
 	<fieldset>
 		<h1>Loan Application Form</h1>
 			<h2>Personal Information</h2>
@@ -27,8 +28,10 @@
 				<label for="applicant_phone">Telephone:</label>
 				<input type="text" name="applicant_phone">
 				<label for="applicant_email">Email:</label>
-				<input type="text" name="applicant_email">
+				<input type="email" id="email" name="applicant_email" required>
 		</fieldset>
+		</div>
+		<div>
 		<fieldset>
 			<h2>Employment Information</h2>
 				<label for="applicant_Occ">Occupation:</label>
@@ -44,6 +47,7 @@
 				<label for="applicant_Empzip">EmployerZip:</label>
 					<input type="text" name="applicant_Empzip">
 		</fieldset>
+		</div>
 		<fieldset>
 			<h2>Loan Information</h2>
 				<label for="applicant_Loantype">Loan Type:</label>
@@ -55,15 +59,12 @@
 					</select>
 						<label for="Loanamount">Requested Loan Amount:</label>
 						<input type="text" name="Loanamount">	
-				<fieldset>
 					<form action="">
 						<h4>Loan Length</h4>
 							<input type="radio" name="" value="5 years">5 years<br>
 							<input type="radio" name="" value="15 years">15 years<br>
 							<input type="radio" name="" value="30 years">30 years<br>
 					</form>
-			</fieldset>
-			<fieldset>
 				<h4>Special Conditions</h4>
 					<label for="condtions"></label>
 						<input type="checkbox" name="conditions" value="I have a down payment">I have a down payment<br>
