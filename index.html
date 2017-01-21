@@ -1,9 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>LNS National Bank</title>
+	<link rel="stylesheet" href="">
 </head>
 <body>
-
+	<fieldset>
+		<h1>Loan Application Form</h1>
+			<h2>Personal Information</h2>
+				<label for="applicant_Fname">First Name:</label>
+				<input type="text" name="applicant_Fname">
+				<label for="applicant_Mname">Middle Initial:</label>
+				<input type="text" name="applicant_Mname">
+				<label for="applicant_Lname">Last Name:</label>
+				<input type="text" name="applicant_Lname">
+				<label for="applicant_Sname">Suffix:</label>
+				<input type="text" name="applicant_Sname"><br>
+				<label for="applicant_address">Address:</label>
+				<input type="text" name="applicant_address">
+				<label for="applicant_city">City:</label>
+				<input type="text" name="applicant_city">
+				<label for="applicant_state">State:</label>
+				<input type="text" name="applicant_state">
+				<label for="applicant_zip">Zip:</label>
+				<input type="text" name="applicant_zip"><br><br>
+				<label for="applicant_phone">Telephone:</label>
+				<input type="text" name="applicant_phone">
+				<label for="applicant_email">Email:</label>
+				<input type="text" name="applicant_email">
+		</fieldset>
+		<fieldset>
+			<h2>Employment Information</h2>
+				<label for="applicant_Occ">Occupation:</label>
+					<input type="text" name="applicant_Occ">
+				<label for="applicant_Empname">Employer Name:</label>
+					<input type="text" name="applicant_Empname">
+				<label for="applicant_Empadd">Employer Address:</label>
+					<input type="text" name="applicant_Empadd"><br>
+				<label for="applicant_Empcity">Employer City:</label>
+					<input type="text" name="applicant_Empcity">
+				<label for="applicant_Empstate">Employer State:</label>
+					<input type="text" name="applicant_Empstate">
+				<label for="applicant_Empzip">EmployerZip:</label>
+					<input type="text" name="applicant_Empzip">
+		</fieldset>
+		<fieldset>
+			<h2>Loan Information</h2>
+				<label for="applicant_Loantype">Loan Type:</label>
+					<select>
+						<option value="Commercial">Commercial</option>
+						<option value="Real Estate">Real Estate</option>
+						<option value="Personal">Personal</option>
+						<option value="Mortgage">Mortgage</option>
+					</select>
+						<label for="Loanamount">Requested Loan Amount:</label>
+						<input type="text" name="Loanamount">	
+				<fieldset>
+					<form action="">
+						<h4>Loan Length</h4>
+							<input type="radio" name="" value="5 years">5 years<br>
+							<input type="radio" name="" value="15 years">15 years<br>
+							<input type="radio" name="" value="30 years">30 years<br>
+					</form>
+			</fieldset>
+			<fieldset>
+				<h4>Special Conditions</h4>
+					<label for="condtions"></label>
+						<input type="checkbox" name="conditions" value="I have a down payment">I have a down payment<br>
+						<input type="checkbox" name="conditions" value="Out-of-state resident">Out-of-state resident<br>
+						<input type="checkbox" name="conditions" value="Married">Married<br>
+						<input type="checkbox" name="conditions" value="Loan will be co-signed">Loan will be co-signed<br>
+			</fieldset>
+				<h4>Additional Comments</h4>
+					<textarea placeholder="Please add any additional information here."></textarea>
+		</fieldset>
 </body>
 </html>
