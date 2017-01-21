@@ -27,8 +27,8 @@
 				<input type="text" name="applicant_zip"><br><br>
 				<label for="applicant_phone">Telephone:</label>
 				<input type="text" name="applicant_phone">
-				<label for="applicant_email">Email:</label>
-				<input type="email" id="email" name="applicant_email" required>
+				<!-- <label for="applicant_email">Email:</label> -->
+				<!-- <input class="validate" type="email" id="email" name="applicant_email" pattern="*@-.-"required> -->
 		</fieldset>
 		</div>
 		<div>
@@ -74,6 +74,14 @@
 			</fieldset>
 				<h4>Additional Comments</h4>
 					<textarea placeholder="Please add any additional information here."></textarea>
+					<form>
+					  <label>Enter a URL:</label>
+					  <input type="url" required/>
+					  <br />
+					  <br />
+					  <label>Email:</label>
+					  <input type="email" required/>
+					</form>
 		</fieldset>
 </body>
 </html>

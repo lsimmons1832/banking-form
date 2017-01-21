@@ -1,3 +1,32 @@
 body {
 	background-color: #f0ead6;
 }
+/*.validate:invalid {
+	box-shadow: red;
+}*/
+
+input:required:invalid {
+  background-color: #ffdddd;
+  border-color: #C00000;
+}
+
+form:required:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:required:valid {
+  background-color: #ddffdd;
+}
+
+form:required:valid {
+  border: 5px solid #ddffdd;
+}
+  
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+/*input:required:invalid {
+  border-color: #C00000;
+}*/
